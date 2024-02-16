@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home" screenOptions={{headerTitle:false,headerTitleAlign:'left',headerStyle:{backgroundColor:"#bfe3cc",maxHeight:80},headerTransparent:false}}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="FormPage" component={FormPage} />
         <Stack.Screen name="TextBoxForm" component={TextBoxForm} />
