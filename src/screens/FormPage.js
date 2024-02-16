@@ -9,10 +9,11 @@ const FormPage = ({ navigation }) => {
       <Text style={styles.title}>Choose an option:</Text>
       <Button
         title="Upload PDF"
+        onPress={()=> navigation.navigate('TextBoxForm')}
       />
       <Button
         title="Fill Text Boxes"
-       
+        onPress={()=> navigation.navigate('TextBoxForm')}
       />
     </View>
   );
