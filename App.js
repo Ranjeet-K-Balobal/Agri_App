@@ -5,7 +5,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import FormPage from './src/screens/Formpage';
-import TextBoxForm from './src/screens/TextBoxForm';
 import ResultPage from './src/screens/ResultPage';
 
 
@@ -17,7 +16,6 @@ const App = () => {
       <Stack.Navigator initialRouteName="Home" screenOptions={{headerTitle:false,headerTitleAlign:'left',headerStyle:{backgroundColor:"#bfe3cc",maxHeight:80},headerTransparent:false}}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="FormPage" component={FormPage} />
-        <Stack.Screen name="TextBoxForm" component={TextBoxForm} />
         <Stack.Screen name="ResultPage" component={ResultPage} />
       </Stack.Navigator>
     </NavigationContainer>
